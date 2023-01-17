@@ -1,0 +1,121 @@
+/*Fuente suave*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+/*font-family: 'Inter', sans-serif;*/
+/*Fuente pesada*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+/*font-family: 'Inter', sans-serif;*/
+
+
+
+:root{
+    --azul-primario:#0A3871;
+    --fondo:#F3F5FC;
+}
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: #F3F5FC;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.primera_seccion{
+    border: 2px solid rgb(0, 13, 255);
+    width: 70%;
+}
+
+.header{
+    border: 2px solid palegreen;
+    width: 95%;
+    height: 8%;
+    margin: 2% auto;
+}
+
+.header img{
+    width:15%;
+    height: 100%;
+    margin: auto;
+}
+
+
+.texto{
+    width: 85%;
+    border: 2px solid red;
+    height: 80%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.texto_form{
+    width: 100%;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+.texto_form input{
+    border: 2px solid cyan;
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    background: rgba(230, 230, 250, 0);
+    text-align: start;
+    color: var(--azul-primario);
+    font-size: larger;
+}
+
+.texto_form ::placeholder{
+    color: var(--azul-primario);
+}
+
+.texto_form button{
+    width: 40%;
+    height: 7%;
+    margin: auto;
+}
+
+
+/*Botones*/
+
+.boton_azul{
+    border: 2px solid var(--azul-primario);
+    background: var(--azul-primario);
+    color: var(--fondo);
+    width: 10%;
+    border-radius: 15px;
+}
+.boton_blanco{
+    background: #f3f5fc00;
+    color: var(--azul-primario);
+    width: 10%;
+    border: none;
+}
+
+
+
+
+.resultados{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-between;
+    width: 25%;
+    height: 90%;
+    border: 2px solid rgb(0, 255, 128);
+    border-radius: 10px;
+    margin: auto;
+}
