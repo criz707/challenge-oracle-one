@@ -7,10 +7,13 @@
 
 
 
+
+/*Colores principales*/
 :root{
     --azul-primario:#0A3871;
     --fondo:#F3F5FC;
 }
+
 
 
 *{
@@ -28,12 +31,10 @@
 }
 
 .primera_seccion{
-    border: 2px solid rgb(0, 13, 255);
     width: 70%;
 }
 
 .header{
-    border: 2px solid palegreen;
     width: 95%;
     height: 8%;
     margin: 2% auto;
@@ -45,10 +46,8 @@
     margin: auto;
 }
 
-
 .texto{
     width: 85%;
-    border: 2px solid red;
     height: 80%;
     margin: 2% auto;
     display: flex;
@@ -59,7 +58,6 @@
 
 .texto_form{
     width: 100%;
-    border: 2px solid red;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -68,14 +66,18 @@
 
 
 .texto_form input{
-    border: 2px solid cyan;
     width: 90%;
-    height: 70%;
+    height: 30%;
     margin: auto;
     background: rgba(230, 230, 250, 0);
-    text-align: start;
+    border: 2px solid rgba(105, 255, 255, 0);
     color: var(--azul-primario);
+    /*text-align: left;*/
+    vertical-align: bottom;
+    top: 2%;
     font-size: larger;
+    /*Quitar borde del input*/
+    outline: none;
 }
 
 .texto_form ::placeholder{
@@ -98,11 +100,15 @@
     width: 10%;
     border-radius: 15px;
 }
+
+
 .boton_blanco{
     background: #f3f5fc00;
     color: var(--azul-primario);
     width: 10%;
     border: none;
+    border: 2px solid var(--azul-primario);
+    border-radius: 15px;
 }
 
 
@@ -115,7 +121,73 @@
     justify-content: space-between;
     width: 25%;
     height: 90%;
-    border: 2px solid rgb(0, 255, 128);
-    border-radius: 10px;
+    border-radius: 20px;
     margin: auto;
+}
+
+.no_resultados{
+    margin: auto;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.resultados .imagen{
+    width: 90%;
+    height: 70%;
+    margin: auto;
+}
+
+.resultados .imagen img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+@media (max-width: 500px){
+
+    .container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 0%;
+    }
+
+    .primera_seccion{
+        width: 100%;
+        height: 150vh;
+    }
+
+    .header{
+        width: 20%;
+        height: 5%;
+    }
+
+    .header img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .texto{
+        width: 90%;
+    }
+
+    .boton_azul{
+        width: 45%;
+    }
+
+    .boton_blanco{
+        width: 45%;
+    }
+
+    .resultados{
+        width: 90%;
+        margin: 5vh auto;
+    }
+    
 }
